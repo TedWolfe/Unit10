@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS-81 Unit 10</title>
+</head>
+<body>
+
+<center>
+
+<h1>
+Exercise 1:
+</h1>
+
+For the following types of objects, give a reasonable set of properties; Country, Restaurant, Music Album, Basketball team, Movie.
+<p />
+<hr />
+
+<h2>Click a button to reveal the properties.</h2>
+(Values are set for a 5 second timeout.)
+<p />
+<p />
+<button id="countries" onclick="ctrs()">Countries</button>
+<button id="rest" onclick="rest()">Restaurants</button>
+<button id="album" onclick="albms()">Albums</button>
+<button id="bball" onclick="ball()">BBall Team</button>
+<button id="movies" onclick="mvs()">Movies</button>
+
+<hr />
+<p />
+
+<p id="display"></p>
+
+</center>
+
+<script>
+
+var countries = new Object();
+    countries.name = "Mexico";
+    countries.politics = "democracy";
+    countries.food = "burritos";
+    countries.export = "vehicles";
+    countries.border = "United States";
+
+var restaurant = new Object();
+    restaurant.name = "Eat at Joe's";
+    restaurant.menu = "American";
+    restaurant.waitress = "Flo";
+    restaurant.open = "6:00am";
+    restaurant.close = "11:00pm";
+
+var albums = new Object();
+    albums.title = "Puppetmasters";
+    albums.band = "Peter Frampton";
+    albums.genre = "Classic Rock";
+    albums.song = "Show Me The Way";
+    albums.coverArtist = "Dali";
+
+var bballTeam = new Object();
+    bballTeam.name = "Kings";
+    bballTeam.mascot = "Slinky the Dog";
+    bballTeam.city = "Sacramento";
+    bballTeam.conference = "Western";
+    bballTeam.coach = "Coach McCoachingham";
+
+var movie = new Object();
+    movie.title = "Bonfire of the Vanities";
+    movie.genre = "Comedy";
+    movie.thumb = "down";
+    movie.star = "Tom Hanks";
+    movie.rating = "R";
+
+
+function clearNotes() {
+    document.getElementById("display").innerHTML = "";
+}
+
+
+function ctrs() {
+
+    document.getElementById("display").innerHTML = "The properties I chose for this topic include; " + Object.getOwnPropertyNames(countries) + ". ";
+    setTimeout(clearNotes, 5000)
+
+}
+
+function rest() {
+
+    document.getElementById("display").innerHTML = "The properties I chose for this topic include; " + Object.getOwnPropertyNames(restaurant) + ". ";
+    setTimeout(clearNotes, 5000)
+
+}
+function albms() {
+
+    document.getElementById("display").innerHTML = "The properties I chose for this topic include; " + Object.getOwnPropertyNames(albums) + ". ";
+    setTimeout(clearNotes, 5000)
+
+}
+function ball() {
+
+    document.getElementById("display").innerHTML = "The properties I chose for this topic include; " + Object.getOwnPropertyNames(bballTeam) + ". ";
+    setTimeout(clearNotes, 5000)
+
+}
+function mvs() {
+
+    document.getElementById("display").innerHTML = "The properties I chose for this topic include; " + Object.getOwnPropertyNames(movie) + ". ";
+    setTimeout(clearNotes, 5000)
+
+}
+
+</script>
+
+</body>
+</html>

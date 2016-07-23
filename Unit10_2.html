@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS-81 Javascript</title>
+</head>
+<body>
+
+<h1>
+Exercise 2:
+</h1>
+
+Consider the following code:
+
+<pre>
+
+var Circle = function (r) {
+    this.radius = r;
+    };
+
+Circle.prototype.area = function () {
+    return Math.PI * this.radius * this.radius;
+    };
+
+var c = newCircle(10);
+
+</pre>
+<b>Q1.</b> What is the value of c.constructor?<br />
+<b>Q2.</b> List all the own properties of c.  (1 alert) <br />
+<b>Q3.</b> List all the enumerable properties of c. (2 alerts)
+<p />
+<hr />
+
+
+<script>
+
+    var Circle = function (r) {
+        this.radius = r;
+    };
+
+    Circle.prototype.area = function () {
+        return Math.PI * this.radius * this.radius;
+    };
+
+    var c = new Circle(10);
+    alert("Q1. The value of c.constructor is the newly created circle object.");
+
+    var d = Object.getOwnPropertyNames(c);
+    alert("Q2. Answer is: " + d);
+
+
+    for (var name in c) {
+        alert("Q3. Answer is: " + name);
+    }
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS-81 Javascript</title>
+</head>
+<body>
+
+<center>
+<h1>
+Exercise 22:
+</h1>
+<p />
+
+Write a function that takes a string and gives the reversal of the string. "Blank" returns blank.  "a" returns a.  "string" returns gnirts.
+<p />
+
+</center>
+
+<pre>
+
+function reverse(){
+
+    try33 = document.getElementById("rev").value;
+    reversed = try33.split("").reverse().join("");
+
+    document.getElementById("rev").value = "";
+    document.getElementById("rev").value = reversed;
+}
+
+</pre>
+
+<center>
+
+<h1>
+Exercise 23:
+</h1>
+<p />
+Build a web interface to the reversal function you just wrote.<br />
+Web page should have a single input box and a button labeled "Reverse".<br />
+When button is clicked, the text entered in the input box is replaced with the reserval string.
+<p />
+
+<p />
+<hr />
+<p />
+<p />
+Please enter a string for <em>reservsification</em>:<p />
+<input type="text" id="rev" width="60" value="A large sample" />&nbsp;<button id="push" onclick="reverse()">Reverse</button>
+
+<script>
+
+function reverse(){
+
+    try33 = document.getElementById("rev").value;
+    reversed = try33.split("").reverse().join("");
+
+    document.getElementById("rev").value = "";
+    document.getElementById("rev").value = reversed;
+}
+
+</script>
+
+<hr />
+<p />
+
+</center>
+
+</body>
+</html>
